@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OCP ALUMNI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'assets/vendor/aos/aos.css'%}" >
+  <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" >
+  <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+
+  <!-- =======================================================
+  * Template Name: Ninestars - v4.5.0
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <div class="alert alert-danger w-100" style="position: absolute;" role="alert">
+    Le contenu de ce site n'est ni rédigé ni cautionné par le Groupe OCP.  </div>
+  <header id="header" class="fixed-top d-flex align-items-center">
+ 
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+      <a class="text-gray" href="/"><img src="{% static 'assets/img/image1.png'%}" /><span id="al">OCP Alumni <br><span id="network">Network</span> </span></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+           <a class="getstarted scrollto" data-bs-toggle="modal" data-bs-target="#authModal"> Se connecte</a>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+<!-- Button trigger modal -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero"  class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Welcometo OCP Alumni</h1>
+          <h2>Rester en contact avec les collègues passés et présents !</h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto" data-bs-target="#registerModal" data-bs-toggle="modal">S'inscrire</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="{% static 'assets/img/p2.png'%}"/>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="{% static 'assets/img/s.jpg'%}" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">C'est quoi OCP Alumni Network</h3>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p>
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle"></i>
+                <h4>Pourquoi</h4>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-info-circle"></i>
+                <h4>Comment</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <div class="modal fade" data-bs-backdrop="static" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="authModalLabel">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <img src="assets/images/doctors-welcome.png" alt="" class="modal-cover">
+                  <form action="" method="post">
+                      <div class="mb-3 d-block log-by-username">
+                          <label for="login-username" class="form-label">Username</label>
+                          <div class="input-group">
+                              <input class="form-control" id="login-username" type="text" placeholder="Username or email address" aria-label="Username or email address">
+                          </div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="login-password" class="form-label">Password</label>
+                          <div class="input-group">
+                              <input class="form-control" id="login-password" type="password" placeholder="Password" aria-label="Password">
+                          </div>
+                      </div>
+                      <div class="mb-3 text-end">
+                          <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#forgetModal">Forget your password?</a>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100">Login</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#registerModal">Create an account</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" data-bs-backdrop="static" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Sign Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/doctors-welcome.png" alt="" class="modal-cover">
+                <form action="" method="post">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="mb-3">
+                                    <label for="register-username" class="form-label">Username</label>
+                                    <div class="input-group">
+                                        <input class="form-control" id="register-username" type="text" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="register-email" class="form-label">Email address</label>
+                                    <div class="input-group">
+                                        <input class="form-control" id="register-email" type="email" placeholder="Email address">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="register-phone" class="form-label">Phone number</label>
+                                    <div class="input-group">
+                                        <input class="form-control" id="register-phone" type="tel" placeholder="Phone number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="mb-3">
+                                    <label for="register-gender" class="form-label">Gender</label>
+                                    <div class="input-group">
+                                        <select id="register-gender" class="form-select">
+                                            <option value="">Select the gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="register-password" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <input class="form-control" id="register-password" type="password" placeholder="Password" aria-label="Password">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="register-password-confirmation" class="form-label">Confirm Password</label>
+                                    <div class="input-group">
+                                        <input class="form-control" id="register-password-confirmation" type="password" placeholder="Confirm Password" aria-label="Confirm Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="w-100 mb-3 text-center">
+                    <span class="text-grey">Do you have an account?</span>
+                </div>
+                <button type="button" class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#authModal">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>OCP Alumni Network</p>
+          <h2>objectifs / avantages</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-shape-circle"></i></div>
+              <h4 class="title"><a href="">Stay connected</a></h4>
+              <p class="description">Rester en contact avec les collègues passés et présents. Découvrir leurs parcours et célébrer leurs réussites. Rester informé de l’actualité du Groupe, et être informé des projets d’avenir et opportunités d’action à travers le monde pour une croissance personnelle et professionnelle.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-trending-up"></i></div>
+              <h4 class="title"><a href="">Keep growing</a></h4>
+              <p class="description">Favoriser les chances de réussite professionnelle et personnelle. Offrir des opportunités d'apprendre et de partager de nouvelles compétences et de nouvelles connaissances. Partager des opportunités commerciales, d’affaires ou des offres d’emplois pour encore plus de succès.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Get involved</a></h4>
+              <p class="description">S’engager envers nos communautés. Lancer ou rejoindre les initiatives de volontariat de notre réseau, visant à promouvoir le développement durable, la protection de l’environnement, et l’autonomisation économique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Clients Section ======= -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Contact us the get started</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form  method="post" role="form" class="php-email-form">
+                {% csrf_token %}
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  {{form.Name}}
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  {{form.Email}}
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                 {{form.Subject}}
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                 {{form.Message}}
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+        </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>OCP Alumni</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">ATLASSIMA</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    (function($) {
+        $('#authModal').on('show.bs.modal', function () {
+            $('.modal.show').on('hidden.bs.modal', function() {
+                $('body').addClass('modal-open');
+                $(this).off('hidden.bs.modal');
+            }).modal('hide');
+        });
+        $('#registerModal').on('show.bs.modal', function () {
+            $('.modal.show').on('hidden.bs.modal', function() {
+                $('body').addClass('modal-open');
+                $(this).off('hidden.bs.modal');
+            }).modal('hide');
+        });
+        $('#forgetModal').on('show.bs.modal', function () {
+            $('.modal.show').on('hidden.bs.modal', function() {
+                $('body').addClass('modal-open');
+                $(this).off('hidden.bs.modal');
+            }).modal('hide');
+        });
+        $("#log-by-phone").on('click', function(e) {
+            e.preventDefault();
+            $('.log-by-username').removeClass('d-block');
+            $('.log-by-username').addClass('d-none');
+            $('.log-by-username input').val('');
+            $('.log-by-phone').removeClass('d-none');
+            $('.log-by-phone').addClass('d-block');
+            return false;
+        });
+        $("#log-by-username").on('click', function(e) {
+            e.preventDefault();
+            $('.log-by-phone').removeClass('d-block');
+            $('.log-by-phone').addClass('d-none');
+            $('.log-by-phone input').val('');
+            $('.log-by-username').removeClass('d-none');
+            $('.log-by-username').addClass('d-block');
+            return false;
+        });
+    }(jQuery))
+</script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
